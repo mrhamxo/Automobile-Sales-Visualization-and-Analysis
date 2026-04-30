@@ -1,12 +1,12 @@
 # Analysis of Automobile Sales During Recessionary Periods
 
 ## Project Overview
-This project involves a comprehensive **Exploratory Data Analysis (EDA)** and visualization of historical automobile sales data. By analyzing sales fluctuations alongside key economic indicators—such as GDP, unemployment rates, and consumer confidence—the project identifies critical patterns in consumer behavior and market resilience during financial downturns. The goal is to provide data-driven insights that help stakeholders optimize marketing and inventory strategies during volatile economic cycles.
+This project involves a comprehensive **Exploratory Data Analysis (EDA)** and visualization of historical automobile sales data. By analyzing sales fluctuations alongside key economic indicators such as GDP, unemployment rates, and consumer confidence the project identifies critical patterns in consumer behavior and market resilience during financial downturns. The goal is to provide data driven insights that help stakeholders optimize marketing and inventory strategies during volatile economic cycles.
 
 ---
 
 ## Dataset Overview
-The analysis is performed on a synthetic dataset designed to simulate real-world economic scenarios. It includes:
+The analysis is performed on a synthetic dataset designed to simulate real world economic scenarios. It includes:
 *   **Time Series Data**: Daily, monthly, and yearly sales records.
 *   **Economic Variables**: GDP, Unemployment Rate, and Consumer Confidence Index.
 *   **Sales Attributes**: Vehicle types (SuperMiniCar, SmallFamilyCar, MediumFamilyCar, ExecutiveCar, Sports), average price, and sales volume.
@@ -19,7 +19,7 @@ Before visualization, the data underwent a rigorous cleaning process to ensure a
 *   **Missing Value Treatment**: Identified and handled null entries to prevent bias in statistical trends.
 *   **De-duplication**: Removed duplicate records to maintain data integrity.
 *   **Normalization**: Standardized numerical values to allow for direct comparison between different economic metrics.
-*   **Date Engineering**: Converted raw date formats into usable 'Month' and 'Year' features for time-series analysis.
+*   **Date Engineering**: Converted raw date formats into usable 'Month' and 'Year' features for time series analysis.
 
 ---
 
@@ -34,7 +34,7 @@ Before visualization, the data underwent a rigorous cleaning process to ensure a
 ### 2. Recession Period Sales Fluctuations
 ![RecessionReportgraphs.png](results-in-graphs/RecessionReportgraphs.png)
 *   **Description**: A focused line chart analyzing sales behavior specifically during years marked as "Recession".
-*   **Commentary**: This graph demonstrates that even within a recession, sales are not stagnant but fluctuate based on short-term economic shifts.
+*   **Commentary**: This graph demonstrates that even within a recession, sales are not stagnant but fluctuate based on short term economic shifts.
 *   **Insight**: Identifying these internal fluctuations helps businesses time their recovery efforts.
 
 ### 3. Sales by Vehicle Type (Recession vs. Normal)
@@ -47,7 +47,7 @@ Before visualization, the data underwent a rigorous cleaning process to ensure a
 ![RecessionReportgraphs2.png](results-in-graphs/RecessionReportgraphs2.png)
 *   **Description**: A pie chart illustrating how companies distribute their advertising budget across vehicle types during downturns.
 *   **Commentary**: Budget is heavily skewed toward "Small" and "Medium" family cars (combined ~49.6%).
-*   **Insight**: Marketing efforts shift toward "safe" bets—practical vehicles that maintain a steady demand even in a poor economy.
+*   **Insight**: Marketing efforts shift toward "safe" bets practical vehicles that maintain a steady demand even in a poor economy.
 
 ### 5. Unemployment Impact on Sales
 ![RecessionReportgraphs3.png](results-in-graphs/RecessionReportgraphs3.png)
@@ -58,10 +58,10 @@ Before visualization, the data underwent a rigorous cleaning process to ensure a
 ---
 
 ## Key Insights
-*   **Affordability Wins**: During recessions, sales of low-cost, fuel-efficient vehicles like SuperMiniCars remain significantly higher than luxury or sports models.
+*   **Affordability Wins**: During recessions, sales of low cost, fuel efficient vehicles like SuperMiniCars remain significantly higher than luxury or sports models.
 *   **GDP Correlation**: Automobile sales serve as a strong proxy for GDP; when the national economic output drops, vehicle purchases follow almost immediately.
 *   **Strategic Marketing**: Data shows that firms that maintain advertising for practical family vehicles during recessions capture a larger share of the remaining market.
-*   **Seasonality Resilience**: Seasonal peaks (like year-end sales) still occur during recessions but at a lower total volume compared to non-recession years.
+*   **Seasonality Resilience**: Seasonal peaks (like year end sales) still occur during recessions but at a lower total volume compared to non recession years.
 
 ---
 
@@ -82,4 +82,4 @@ Before visualization, the data underwent a rigorous cleaning process to ensure a
 ---
 
 ## Conclusion
-This project demonstrates that while economic recessions are challenging for the automotive industry, the impact is not uniform across all segments. Through data analysis, we learned that focusing on entry-level models and aligning marketing budgets with consumer utility is the most effective way to weather financial instability. Moving forward, these models can be used to forecast future sales trends based on emerging economic indicators.
+This project demonstrates that while economic recessions are challenging for the automotive industry, the impact is not uniform across all segments. Through data analysis, we learned that focusing on entry level models and aligning marketing budgets with consumer utility is the most effective way to weather financial instability. Moving forward, these models can be used to forecast future sales trends based on emerging economic indicators.
