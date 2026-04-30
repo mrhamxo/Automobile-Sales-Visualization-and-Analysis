@@ -1,4 +1,4 @@
-# Historical Analysis of Automobile Sales During Recessionary Periods
+# Analysis of Automobile Sales During Recessionary Periods
 
 ## Project Overview
 This project involves a comprehensive **Exploratory Data Analysis (EDA)** and visualization of historical automobile sales data. By analyzing sales fluctuations alongside key economic indicators—such as GDP, unemployment rates, and consumer confidence—the project identifies critical patterns in consumer behavior and market resilience during financial downturns. The goal is to provide data-driven insights that help stakeholders optimize marketing and inventory strategies during volatile economic cycles.
