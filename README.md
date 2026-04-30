@@ -78,7 +78,7 @@ Before visualization, the data underwent a rigorous cleaning process to ensure a
 2.  **Install Libraries**: `pip install pandas numpy matplotlib seaborn plotly dash`
 3.  **Run Analysis**: Open and run the Jupyter Notebook files to generate the EDA reports.
 4.  **View Dashboard**: Run `python Dashboard-with-Ploty-and-Dash.py` to launch the interactive dashboard in your browser.
-5.   ![Live Dashboard Look Like](results-in-graphs/Dashboard.png)
+    ![Live Dashboard Look Like](results-in-graphs/Dashboard.png)
 
 ---
 
