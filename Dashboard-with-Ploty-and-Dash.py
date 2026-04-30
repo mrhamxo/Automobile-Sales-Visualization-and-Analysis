@@ -75,7 +75,11 @@ app.layout = html.Div([
         html.Div(
             id='output-container',
             className='chart-grid',
-            style={'display': 'flex'}
+            style={
+                'display': 'flex',
+                'flex-wrap': 'wrap',   # ✅ FIX: allows 2 rows
+                'gap': '20px'
+            }
         ),
     ])
 ])
@@ -154,19 +158,28 @@ def update_output_container(selected_statistics, selected_year):
         )
 
         return [
-            html.Div(className='chart-item',
-                children=[html.Div(children=R_chart1), html.Div(children=R_chart2)],
-                style={'display': 'flex'}),
+            # ✅ FIXED GRID LAYOUT (2 charts per row)
+            html.Div(
+                children=[R_chart1, R_chart2],
+                style={
+                    'display': 'flex',
+                    'width': '100%',
+                    'gap': '20px'
+                }
+            ),
 
-            html.Div(className='chart-item',
+            html.Div(
                 children=[R_chart3, R_chart4],
-                style={'display': 'flex'})
+                style={
+                    'display': 'flex',
+                    'width': '100%',
+                    'gap': '20px'
+                }
+            )
         ]
 
 
 # 6: Create and display graphs for Yearly Report Statistics
-    # Yearly Statistic Report Plots 
-    # Check for Yearly Statistics.                             
     elif (selected_year and selected_statistics=='Yearly Statistics'):
 
         yearly_data = data[data['Year'] == selected_year]
@@ -215,13 +228,24 @@ def update_output_container(selected_statistics, selected_year):
 
 # 7: Returning the graphs for displaying Yearly data
         return [
-            html.Div(className='chart-item',
-                children=[html.Div(children=Y_chart1), html.Div(children=Y_chart2)],
-                style={'display':'flex'}),
+            # ✅ FIXED GRID LAYOUT (2 charts per row)
+            html.Div(
+                children=[Y_chart1, Y_chart2],
+                style={
+                    'display': 'flex',
+                    'width': '100%',
+                    'gap': '20px'
+                }
+            ),
 
-            html.Div(className='chart-item',
+            html.Div(
                 children=[Y_chart3, Y_chart4],
-                style={'display': 'flex'})
+                style={
+                    'display': 'flex',
+                    'width': '100%',
+                    'gap': '20px'
+                }
+            )
         ]
 
     else:
